@@ -15,11 +15,11 @@
     <header>
     </header>
     <main>
-        <section class="contenido-logo">
+        <section class="seccion-logo">
             <img src="./images/Logo.png" alt="Logo de Alura" class="logo">
         </section>
 
-        <section class="contenido-mensaje">
+        <section class="seccion-mensaje">
             <textarea name="mensaje" id="mensaje" cols="80" rows="10" class="mensaje" placeholder="ingrese el texto aquí..." autofocus></textarea>
             
             <div class="contenido-botones">
@@ -29,15 +29,18 @@
             </div>
         </section>
             
-        <section class="contenido-resultado">
-            <div class="resultados" >
+        <section class="seccion-resultado">
+            <div class="contenido-resultados" >
                 
-                <div class="muneco" id="divResultado">
-
+                <div class="muneco" id="divImagenMunheco">
                     <img class="munecoImg" src="./images/Muñeco.png" alt="El encriptador">
                     <h2 class="munecoTitulo">Ningún mensaje fue encontrado</h2>
                     <p class="munecoParrafo">Ingrese el texo que desees encriptar o desencriptar</p>
                     
+                </div>
+                <div class="resultado" id="resultado">
+                    <textarea name="textarea-resultado" id="textareaResultado" cols="80" rows="10" class="textarea-resultado"></textarea>
+                    <button id="botonCopiar" class="boton-copiar">Copiar</button>
                 </div>
             </div>
         </section>
@@ -52,10 +55,9 @@
         function encriptar() {
             // Reemplazamos el contido del resultado
             
-            let divResultado = document.getElementById("divResultado");
-            divResultado.innerHTML = `            
-            <textarea name="textarea-resultado" id="textareaResultado" cols="80" rows="10" class="textarea-resultado"></textarea>
-            <button id="botonCopiar" class="boton-copiar">Copiar</button> `
+            document.getElementById("divImagenMunheco").style.display = "none";
+            document.getElementById("resultado").style.display = "block";
+            
             
             let mensaje = document.getElementById("mensaje").value;
             
@@ -89,10 +91,8 @@
         function desencriptar() {
             // Reemplazamos el contido del resultado
             
-            let divResultado = document.getElementById("divResultado");
-            divResultado.innerHTML = `            
-            <textarea name="textarea-resultado" id="textareaResultado" cols="80" rows="10" class="textarea-resultado"></textarea>
-            <button id="botonCopiar" class="boton-copiar">Copiar</button> `
+            document.getElementById("divImagenMunheco").style.display = "none";
+            document.getElementById("resultado").style.display = "block";
 
             
             let mensaje = document.getElementById("mensaje").value;

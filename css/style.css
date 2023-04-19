@@ -27,7 +27,7 @@ main {
 
 /* +++++++++++++++++++++++++++++++ BLOQUE DE LOGO +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-.contenido-logo {
+.seccion-logo {
     width: 10%;
     height: 100%;
 }
@@ -41,7 +41,7 @@ main {
 
 
 
-.contenido-mensaje {
+.seccion-mensaje {
     width: 55%;
     height: 90vh;
     display: block;
@@ -118,13 +118,27 @@ main {
 
 /* +++++++++++++++++++++++++++++++ BLOQUE DE RESULTADO ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-.contenido-resultado {
+.seccion-resultado {
     width: 35%;
     height: 100%;
     text-align: center;
 }
 
 /* +++++++++++++++++++++++++++++++ MUÑECO ENCRIPTADOR ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.contenido-resultados {
+    width: 80%;
+    height: 90%;
+    margin: 40px auto;
+    background-color: white;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    box-shadow: 2px 1px 25px -10px #0a38718d;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    
+}
 
 .muneco {
     height: 100%;
@@ -153,18 +167,10 @@ main {
 
 
 /* +++++++++++++++++++++++++++++++  RESULTADO ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-.resultados {
-    width: 80%;
-    height: 90%;
-    margin: 40px auto;
-    background-color: white;
-    border: 1px solid #ffffff;
-    border-radius: 25px;
-    box-shadow: 2px 1px 25px -10px #0a38718d;
-    display: flex;
-    align-items: center; /* Centrar verticalmente */
-    justify-content: center; /* Centrar horizontalmente */
-    
+
+.resultado {
+    display: none;
+    height: auto;
 }
 
 
